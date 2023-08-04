@@ -1,0 +1,26 @@
+
+class name                                  job name   
+
+ReconciliationReportSchedular              Reconcilation report batch	
+	
+EI_EWI_FinanceSendEmail                    EWI_Finance_SendEmail
+
+EI_EWI_UpdateEmailChaserDetailsBatch	   EI_EWI_UpdateEmailChaserDetailsBatch	
+
+EI_EWI_SelfResolutionBatch                 EI_EWI_SelfResolutionBatch	
+
+EI_EWI_ReviewPaymentBatch                  EI_EWI_ReviewPaymentBatch	
+            
+EI_EWI_PartyWithdrawConsentBatch           EI_EWI_PartyWithdrawConsentBatch	
+
+EI_EWI_EvidenceGatheringBatchSchedular     EI_EWI_EvidenceGatheringBatch
+  
+EI_EWI_ScheduleDisputedFunds               EI_EWI_ChaserEmailForDisputedFunds
+
+EI_EWI_CaseTobeDeletedBatch                EI_EWI_CaseTobeDeletedBatch
+
+EI_EWI_CaseStatusUpdateNoResponseBatch     EI_EWI_CaseStatusUpdateNoResponseBatch	
+
+EI_EWI_ScheduleCalOverduedays              EI_EWI_CalOverdueBatch
+
+EI_EWI_AdjudicationBatch                   EI_EWI_AdjudicationBatch

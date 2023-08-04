@@ -1,0 +1,14 @@
+Folder Name - EWI Finance Reconcilation reports
+Reports Names -
+Balance of monies on unadjudicated Cases
+Rec-Unallocated (amber/green)
+Sage unallocated sync
+Reconcilation Pending payments
+Reconciliation - Unable to pay
+Reconciliation - sage transaction sync
+Rec:- Unallocated without account (Red)
+Negative balances on cases
+
+
+Folder Name : EWI Finance Reports
+Reports Name : Case with balance in Closed Stage								
