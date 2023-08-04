@@ -1,0 +1,317 @@
+58.0 APEX_CODE,FINEST;APEX_PROFILING,FINE;CALLOUT,FINER;DB,FINEST;NBA,NONE;SYSTEM,FINE;VALIDATION,INFO;VISUALFORCE,FINE;WAVE,NONE;WORKFLOW,INFO
+11:17:33.0 (198450)|USER_INFO|[EXTERNAL]|0058d000004De5F|sharon.murray@sandstoneuk.com|(GMT+01:00) British Summer Time (Europe/London)|GMT+01:00
+11:17:33.0 (265081)|EXECUTION_STARTED
+11:17:33.0 (279675)|CODE_UNIT_STARTED|[EXTERNAL]|apex://EI_TenentChangeoverApx/ACTION$getdeposittenantdetails
+11:17:33.0 (1949348)|CODE_UNIT_STARTED|[EXTERNAL]|01p8d00000BXTIh|EI_TenentChangeoverApx.getdeposittenantdetails(String, String)
+11:17:33.0 (2294390)|HEAP_ALLOCATE|[79]|Bytes:3
+11:17:33.0 (2389832)|HEAP_ALLOCATE|[84]|Bytes:152
+11:17:33.0 (2409112)|HEAP_ALLOCATE|[399]|Bytes:408
+11:17:33.0 (2427008)|HEAP_ALLOCATE|[412]|Bytes:408
+11:17:33.0 (2442334)|HEAP_ALLOCATE|[520]|Bytes:48
+11:17:33.0 (2471076)|HEAP_ALLOCATE|[139]|Bytes:6
+11:17:33.0 (2488376)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:27
+11:17:33.0 (2493380)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:141
+11:17:33.0 (2497649)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:222
+11:17:33.0 (2509201)|METHOD_ENTRY|[1]|01p8d00000BXTIh|EI_TenentChangeoverApx.EI_TenentChangeoverApx()
+11:17:33.0 (2515944)|STATEMENT_EXECUTE|[1]
+11:17:33.0 (2520360)|STATEMENT_EXECUTE|[1]
+11:17:33.0 (2554380)|HEAP_ALLOCATE|[52]|Bytes:5
+11:17:33.0 (2585563)|HEAP_ALLOCATE|[58]|Bytes:5
+11:17:33.0 (2597721)|HEAP_ALLOCATE|[66]|Bytes:7
+11:17:33.0 (2624406)|SYSTEM_MODE_ENTER|true
+11:17:33.0 (2640819)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+11:17:33.0 (2646339)|STATEMENT_EXECUTE|[1376]
+11:17:33.0 (2648718)|STATEMENT_EXECUTE|[1470]
+11:17:33.0 (2656156)|SYSTEM_MODE_EXIT|true
+11:17:33.0 (2673127)|METHOD_EXIT|[1]|EI_TenentChangeoverApx
+11:17:33.0 (2679516)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:18
+11:17:33.0 (2697517)|VARIABLE_SCOPE_BEGIN|[578]|depositId|String|false|false
+11:17:33.0 (2750558)|VARIABLE_ASSIGNMENT|[578]|depositId|"a0L8d000000fUm1EAE"
+11:17:33.0 (2761388)|VARIABLE_SCOPE_BEGIN|[578]|tenantChangeOver|String|false|false
+11:17:33.0 (2771608)|VARIABLE_ASSIGNMENT|[578]|tenantChangeOver|null
+11:17:33.0 (2792599)|SYSTEM_MODE_ENTER|true
+11:17:33.0 (2799835)|HEAP_ALLOCATE|[579]|Bytes:5
+11:17:33.0 (2805106)|STATEMENT_EXECUTE|[578]
+11:17:33.0 (2807241)|STATEMENT_EXECUTE|[579]
+11:17:33.0 (2821667)|HEAP_ALLOCATE|[579]|Bytes:4
+11:17:33.0 (2888799)|SYSTEM_CONSTRUCTOR_ENTRY|[579]|<init>()
+11:17:33.0 (2945848)|SYSTEM_CONSTRUCTOR_EXIT|[579]|<init>()
+11:17:33.0 (2953189)|VARIABLE_SCOPE_BEGIN|[579]|wraplist|List<EI_TenentChangeoverApx.depositwrapper>|true|false
+11:17:33.0 (2978679)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+11:17:33.0 (2994595)|VARIABLE_ASSIGNMENT|[579]|wraplist|[]|0x7c235617
+11:17:33.0 (3003030)|HEAP_ALLOCATE|[580]|Bytes:173
+11:17:33.0 (3023180)|HEAP_ALLOCATE|[580]|Bytes:4
+11:17:33.0 (3032491)|HEAP_ALLOCATE|[580]|Bytes:7
+11:17:33.0 (4183507)|SOQL_EXECUTE_BEGIN|[580]|Aggregations:0|SELECT id, name, Deposit_Amount__c, Protected_Amount__c, Start_Date__c, Number_of_Tenants__c, Scheme__c, Property__c, Property_Address__c FROM deposit__C WHERE id = :tmpVar1
+11:17:33.0 (11861507)|SOQL_EXECUTE_EXPLAIN|[580]|Index on Deposit__c : [Id], cardinality: 1, sobjectCardinality: 249028, relativeCost 0
+11:17:33.0 (11883644)|SOQL_EXECUTE_END|[580]|Rows:1
+11:17:33.0 (11929186)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+11:17:33.0 (12020227)|SYSTEM_METHOD_ENTRY|[580]|Database.QueryLocator.iterator()
+11:17:33.0 (12211246)|HEAP_ALLOCATE|[580]|Bytes:54
+11:17:33.0 (12221923)|HEAP_ALLOCATE|[580]|Bytes:8
+11:17:33.0 (12238971)|SYSTEM_METHOD_ENTRY|[7]|QueryLocatorIterator.QueryLocatorIterator()
+11:17:33.0 (12243532)|STATEMENT_EXECUTE|[7]
+11:17:33.0 (12259434)|SYSTEM_METHOD_EXIT|[7]|QueryLocatorIterator
+11:17:33.0 (12272545)|HEAP_ALLOCATE|[580]|Bytes:28
+11:17:33.0 (12353681)|HEAP_ALLOCATE|[580]|Bytes:8
+11:17:33.0 (12369251)|HEAP_ALLOCATE|[580]|Bytes:8
+11:17:33.0 (12373172)|HEAP_ALLOCATE|[580]|Bytes:8
+11:17:33.0 (12381077)|VARIABLE_SCOPE_BEGIN|[15]|this|Database.QueryLocatorIterator|true|false
+11:17:33.0 (12453617)|VARIABLE_ASSIGNMENT|[15]|this|{}|0x29c991e4
+11:17:33.0 (12461385)|VARIABLE_SCOPE_BEGIN|[15]|values|List<SObject>|true|false
+11:17:33.0 (12523513)|VARIABLE_ASSIGNMENT|[15]|values|[{"Id":"a0L8d000000fUm1EAE","Name":"DAN739701","Deposit_Amount__c":2520.00,"Protected_Amount__c":2520.00,"Start_Date__c":"2022-09-15T00:00:00.000Z","Number_of_Tenants__c":4,"Scheme__c":"a0Z4J000005fMjyUAE","Property__c":"a0Y8d000000nbFWEAY","Property_Address__c":"Flat 2f1 at 17,  Roy (41 more) ..."}]|0x24f15741
+11:17:33.0 (12533614)|VARIABLE_SCOPE_BEGIN|[15]|ql|Database.QueryLocator|true|false
+11:17:33.0 (12553728)|VARIABLE_ASSIGNMENT|[15]|ql|{"query":"SELECT id, name, Dep (153 more) ..."}|0x475e12bd
+11:17:33.0 (12560201)|VARIABLE_SCOPE_BEGIN|[15]|totalNumRecords|Integer|false|false
+11:17:33.0 (12569999)|VARIABLE_ASSIGNMENT|[15]|totalNumRecords|1
+11:17:33.0 (12575137)|VARIABLE_SCOPE_BEGIN|[15]|queryMoreSize|Integer|false|false
+11:17:33.0 (12584027)|VARIABLE_ASSIGNMENT|[15]|queryMoreSize|49999
+11:17:33.0 (13999341)|HEAP_ALLOCATE|[580]|Bytes:28
+11:17:33.0 (14026712)|SYSTEM_METHOD_EXIT|[580]|Database.QueryLocator.iterator()
+11:17:33.0 (14057333)|METHOD_ENTRY|[580]||Database.QueryLocatorIterator.hasNext()
+11:17:33.0 (14164769)|METHOD_EXIT|[580]||Database.QueryLocatorIterator.hasNext()
+11:17:33.0 (14174920)|METHOD_ENTRY|[580]||Database.QueryLocatorIterator.next()
+11:17:33.0 (14254857)|METHOD_EXIT|[580]||Database.QueryLocatorIterator.next()
+11:17:33.0 (14264057)|VARIABLE_SCOPE_BEGIN|[580]|deposit|Deposit__c|true|false
+11:17:33.0 (14317724)|VARIABLE_ASSIGNMENT|[580]|deposit|{"Id":"a0L8d000000fUm1EAE","Name":"DAN739701","Deposit_Amount__c":2520.00,"Protected_Amount__c":2520.00,"Start_Date__c":"2022-09-15T00:00:00.000Z","Number_of_Tenants__c":4,"Scheme__c":"a0Z4J000005fMjyUAE","Property__c":"a0Y8d000000nbFWEAY","Property_Address__c":"Flat 2f1 at 17,  Roy (41 more) ..."}|0x40a0e233
+11:17:33.0 (14329976)|STATEMENT_EXECUTE|[581]
+11:17:33.0 (14332415)|STATEMENT_EXECUTE|[582]
+11:17:33.0 (14363396)|HEAP_ALLOCATE|[582]|Bytes:124
+11:17:33.0 (14371134)|HEAP_ALLOCATE|[582]|Bytes:19
+11:17:33.0 (14474675)|HEAP_ALLOCATE|[582]|Bytes:12
+11:17:33.0 (14589584)|CONSTRUCTOR_ENTRY|[582]|01p8d00000BXTIh|<init>(Deposit__c)|EI_TenentChangeoverApx.depositwrapper
+11:17:33.0 (14636938)|VARIABLE_SCOPE_BEGIN|[1380]|this|EI_TenentChangeoverApx.depositwrapper|true|false
+11:17:33.0 (14701078)|VARIABLE_ASSIGNMENT|[1380]|this|{}|0x59b9d2b6
+11:17:33.0 (14713144)|VARIABLE_SCOPE_BEGIN|[1380]|Depositobject|Deposit__c|true|false
+11:17:33.0 (14749526)|VARIABLE_ASSIGNMENT|[1380]|Depositobject|{"Id":"a0L8d000000fUm1EAE","Name":"DAN739701","Deposit_Amount__c":2520.00,"Protected_Amount__c":2520.00,"Start_Date__c":"2022-09-15T00:00:00.000Z","Number_of_Tenants__c":4,"Scheme__c":"a0Z4J000005fMjyUAE","Property__c":"a0Y8d000000nbFWEAY","Property_Address__c":"Flat 2f1 at 17,  Roy (41 more) ..."}|0x40a0e233
+11:17:33.0 (14761565)|STATEMENT_EXECUTE|[1376]
+11:17:33.0 (14764104)|STATEMENT_EXECUTE|[1377]
+11:17:33.0 (14765922)|STATEMENT_EXECUTE|[1378]
+11:17:33.0 (14785232)|STATEMENT_EXECUTE|[1380]
+11:17:33.0 (14787390)|STATEMENT_EXECUTE|[1381]
+11:17:33.0 (14810173)|SYSTEM_METHOD_ENTRY|[1381]|EI_TenentChangeoverApx.depositwrapper.__sfdc_Depositobject(Deposit__c)
+11:17:33.0 (14870384)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x59b9d2b6
+11:17:33.0 (14900823)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"Id":"a0L8d000000fUm1EAE","Name":"DAN739701","Deposit_Amount__c":2520.00,"Protected_Amount__c":2520.00,"Start_Date__c":"2022-09-15T00:00:00.000Z","Number_of_Tenants__c":4,"Scheme__c":"a0Z4J000005fMjyUAE","Property__c":"a0Y8d000000nbFWEAY","Property_Address__c":"Flat 2f1 at 17,  Roy (41 more) ..."}|0x40a0e233
+11:17:33.0 (14935800)|VARIABLE_ASSIGNMENT|[1377]|this.Depositobject|{"Id":"a0L8d000000fUm1EAE","Name":"DAN739701","Deposit_Amount__c":2520.00,"Protected_Amount__c":2520.00,"Start_Date__c":"2022-09-15T00:00:00.000Z","Number_of_Tenants__c":4,"Scheme__c":"a0Z4J000005fMjyUAE","Property__c":"a0Y8d000000nbFWEAY","Property_Address__c":"Flat 2f1 at 17,  Roy (41 more) ..."}|0x59b9d2b6
+11:17:33.0 (14948800)|SYSTEM_METHOD_EXIT|[1381]|EI_TenentChangeoverApx.depositwrapper.__sfdc_Depositobject(Deposit__c)
+11:17:33.0 (15006610)|CONSTRUCTOR_EXIT|[582]|01p8d00000BXTIh|<init>(Deposit__c)|EI_TenentChangeoverApx.depositwrapper
+11:17:33.0 (15037643)|SYSTEM_METHOD_ENTRY|[582]|List<EI_TenentChangeoverApx.depositwrapper>.add(Object)
+11:17:33.0 (15047788)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+11:17:33.0 (15058969)|SYSTEM_METHOD_EXIT|[582]|List<EI_TenentChangeoverApx.depositwrapper>.add(Object)
+11:17:33.0 (15068600)|METHOD_ENTRY|[580]||Database.QueryLocatorIterator.hasNext()
+11:17:33.0 (15087612)|METHOD_EXIT|[580]||Database.QueryLocatorIterator.hasNext()
+11:17:33.0 (15098052)|VARIABLE_ASSIGNMENT|[580]|deposit|null|
+11:17:33.0 (15121476)|STATEMENT_EXECUTE|[589]
+11:17:33.0 (15127605)|HEAP_ALLOCATE|[590]|Bytes:535
+11:17:33.0 (15155409)|HEAP_ALLOCATE|[590]|Bytes:4
+11:17:33.0 (17979958)|SOQL_EXECUTE_BEGIN|[590]|Aggregations:0|SELECT id, Deposit__c, Tenencychangeoveramount__c, Istenantmoved__c, Role__c, Is_Lead__c, Deposit_Holder__c, Deposit_Holder__r.Id, Deposit_Holder__r.Salutation, Deposit_Holder__r.FirstName, Deposit_Holder__r.LastName, Deposit_Holder__r.Name, Deposit_Holder__r.PersonEmail, Deposit_Holder__r.Phone, Deposit_Holder__r.PersonMailingStreet, Deposit_Holder__r.PersonMailingCity, Deposit_Holder__r.PersonMailingCountry, Deposit_Holder__r.PersonMailingPostalCode FROM Deposit_Allocation__c WHERE (Deposit__c = :tmpVar1 AND Role__c = 'Tenant')
+11:17:33.0 (28603271)|SOQL_EXECUTE_EXPLAIN|[590]|No explain plan is available
+11:17:33.0 (28623824)|SOQL_EXECUTE_END|[590]|Rows:4
+11:17:33.0 (28665603)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:20
+11:17:33.0 (28741627)|SYSTEM_METHOD_ENTRY|[590]|Database.QueryLocator.iterator()
+11:17:33.0 (28823191)|HEAP_ALLOCATE|[590]|Bytes:28
+11:17:33.0 (28887316)|HEAP_ALLOCATE|[590]|Bytes:20
+11:17:33.0 (28905560)|HEAP_ALLOCATE|[590]|Bytes:8
+11:17:33.0 (28909531)|HEAP_ALLOCATE|[590]|Bytes:8
+11:17:33.0 (28918950)|VARIABLE_SCOPE_BEGIN|[15]|this|Database.QueryLocatorIterator|true|false
+11:17:33.0 (28969673)|VARIABLE_ASSIGNMENT|[15]|this|{}|0x4179c4cc
+11:17:33.0 (28977060)|VARIABLE_SCOPE_BEGIN|[15]|values|List<SObject>|true|false
+11:17:33.0 (29093653)|VARIABLE_ASSIGNMENT|[15]|values|[{"Id":"a0J8d000001pT50EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":0.00,"Istenantmoved__c":false,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000DwxjHAAR","Deposit_Holder__r":{"Id":"0018d00000DwxjHAAR","Salutation":"Miss","FirstName":"LEONIE","LastName":"BAPTIST","Name":"LEONIE BAPTIST","PersonEmail":"leoniebaptist@btinte (8 more) ...","Phone":"07860960525"}},{"Id":"a0J8d000001pT51EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":630.00,"Istenantmoved__c":true,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000G2HKBAA3","Deposit_Holder__r":{"Id":"0018d00000G2HKBAA3","Salutation":"Miss","FirstName":"Nicoletta","LastName":"Gambro","Name":"Nicoletta Gambro","PersonEmail":"nikkilg246@gmail.com","Phone":"07580535514"}},{"Id":"a0J8d000001pT52EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":0.00,"Istenantmoved__c":false,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000G2HKCAA3","Deposit_Holder__r":{"Id":"0018d00000G2HKCAA3","Salutation":"Miss","FirstName":"Clara","LastName":"Hammersley","Name":"Clara Hammersley","PersonEmail":"hammersleyclara@gmai (5 more) ...","Phone":"07555143705"}},{"Id":"a0J8d000001pT53EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":630.00,"Istenantmoved__c":true,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000G2HKDAA3","Deposit_Holder__r":{"Id":"0018d00000G2HKDAA3","Salutation":"Miss","FirstName":"Rachel","LastName":"Syme","Name":"Rachel Syme","PersonEmail":"rachelsyme2@live.co. (2 more) ...","Phone":"07825651706"}}]|0x4611adc0
+11:17:33.0 (29136762)|VARIABLE_SCOPE_BEGIN|[15]|ql|Database.QueryLocator|true|false
+11:17:33.0 (29197617)|VARIABLE_ASSIGNMENT|[15]|ql|{"query":"SELECT id, Deposit__ (515 more) ..."}|0x5db4b8d9
+11:17:33.0 (29211389)|VARIABLE_SCOPE_BEGIN|[15]|totalNumRecords|Integer|false|false
+11:17:33.0 (29229629)|VARIABLE_ASSIGNMENT|[15]|totalNumRecords|4
+11:17:33.0 (29237143)|VARIABLE_SCOPE_BEGIN|[15]|queryMoreSize|Integer|false|false
+11:17:33.0 (29250722)|VARIABLE_ASSIGNMENT|[15]|queryMoreSize|49995
+11:17:33.0 (29368122)|HEAP_ALLOCATE|[590]|Bytes:28
+11:17:33.0 (29385497)|SYSTEM_METHOD_EXIT|[590]|Database.QueryLocator.iterator()
+11:17:33.0 (29411408)|METHOD_ENTRY|[590]||Database.QueryLocatorIterator.hasNext()
+11:17:33.0 (29523334)|METHOD_EXIT|[590]||Database.QueryLocatorIterator.hasNext()
+11:17:33.0 (29535663)|METHOD_ENTRY|[590]||Database.QueryLocatorIterator.next()
+11:17:33.0 (29658399)|METHOD_EXIT|[590]||Database.QueryLocatorIterator.next()
+11:17:33.0 (29670273)|VARIABLE_SCOPE_BEGIN|[590]|depall|Deposit_Allocation__c|true|false
+11:17:33.0 (29725943)|VARIABLE_ASSIGNMENT|[590]|depall|{"Id":"a0J8d000001pT50EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":0.00,"Istenantmoved__c":false,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000DwxjHAAR","Deposit_Holder__r":{"Id":"0018d00000DwxjHAAR","Salutation":"Miss","FirstName":"LEONIE","LastName":"BAPTIST","Name":"LEONIE BAPTIST","PersonEmail":"leoniebaptist@btinte (8 more) ...","Phone":"07860960525"}}|0x31f10520
+11:17:33.0 (29759613)|STATEMENT_EXECUTE|[591]
+11:17:33.0 (29768059)|STATEMENT_EXECUTE|[592]
+11:17:33.0 (29780203)|HEAP_ALLOCATE|[592]|Bytes:12
+11:17:33.0 (29914618)|CONSTRUCTOR_ENTRY|[592]|01p8d00000BXTIh|<init>(Deposit_Allocation__c)|EI_TenentChangeoverApx.depositwrapper
+11:17:33.0 (29998162)|VARIABLE_SCOPE_BEGIN|[1384]|this|EI_TenentChangeoverApx.depositwrapper|true|false
+11:17:33.0 (30032892)|VARIABLE_ASSIGNMENT|[1384]|this|{}|0x24fdc82
+11:17:33.0 (30046682)|VARIABLE_SCOPE_BEGIN|[1384]|Depallobject|Deposit_Allocation__c|true|false
+11:17:33.0 (30089586)|VARIABLE_ASSIGNMENT|[1384]|Depallobject|{"Id":"a0J8d000001pT50EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":0.00,"Istenantmoved__c":false,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000DwxjHAAR","Deposit_Holder__r":{"Id":"0018d00000DwxjHAAR","Salutation":"Miss","FirstName":"LEONIE","LastName":"BAPTIST","Name":"LEONIE BAPTIST","PersonEmail":"leoniebaptist@btinte (8 more) ...","Phone":"07860960525"}}|0x31f10520
+11:17:33.0 (30111733)|STATEMENT_EXECUTE|[1376]
+11:17:33.0 (30118061)|STATEMENT_EXECUTE|[1377]
+11:17:33.0 (30128904)|STATEMENT_EXECUTE|[1378]
+11:17:33.0 (30182033)|STATEMENT_EXECUTE|[1384]
+11:17:33.0 (30184800)|STATEMENT_EXECUTE|[1385]
+11:17:33.0 (30208831)|SYSTEM_METHOD_ENTRY|[1385]|EI_TenentChangeoverApx.depositwrapper.__sfdc_Depallobject(Deposit_Allocation__c)
+11:17:33.0 (30278130)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x24fdc82
+11:17:33.0 (30324426)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"Id":"a0J8d000001pT50EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":0.00,"Istenantmoved__c":false,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000DwxjHAAR","Deposit_Holder__r":{"Id":"0018d00000DwxjHAAR","Salutation":"Miss","FirstName":"LEONIE","LastName":"BAPTIST","Name":"LEONIE BAPTIST","PersonEmail":"leoniebaptist@btinte (8 more) ...","Phone":"07860960525"}}|0x31f10520
+11:17:33.0 (30376505)|VARIABLE_ASSIGNMENT|[1378]|this.Depallobject|{"Id":"a0J8d000001pT50EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":0.00,"Istenantmoved__c":false,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000DwxjHAAR","Deposit_Holder__r":{"Id":"0018d00000DwxjHAAR","Salutation":"Miss","FirstName":"LEONIE","LastName":"BAPTIST","Name":"LEONIE BAPTIST","PersonEmail":"leoniebaptist@btinte (8 more) ...","Phone":"07860960525"}}|0x24fdc82
+11:17:33.0 (30397333)|SYSTEM_METHOD_EXIT|[1385]|EI_TenentChangeoverApx.depositwrapper.__sfdc_Depallobject(Deposit_Allocation__c)
+11:17:33.0 (30444394)|CONSTRUCTOR_EXIT|[592]|01p8d00000BXTIh|<init>(Deposit_Allocation__c)|EI_TenentChangeoverApx.depositwrapper
+11:17:33.0 (30509273)|SYSTEM_METHOD_ENTRY|[592]|List<EI_TenentChangeoverApx.depositwrapper>.add(Object)
+11:17:33.0 (30524974)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+11:17:33.0 (30545149)|SYSTEM_METHOD_EXIT|[592]|List<EI_TenentChangeoverApx.depositwrapper>.add(Object)
+11:17:33.0 (30559569)|METHOD_ENTRY|[590]||Database.QueryLocatorIterator.hasNext()
+11:17:33.0 (30630528)|METHOD_EXIT|[590]||Database.QueryLocatorIterator.hasNext()
+11:17:33.0 (30639716)|METHOD_ENTRY|[590]||Database.QueryLocatorIterator.next()
+11:17:33.0 (30823567)|METHOD_EXIT|[590]||Database.QueryLocatorIterator.next()
+11:17:33.0 (30837986)|VARIABLE_SCOPE_BEGIN|[590]|depall|Deposit_Allocation__c|true|false
+11:17:33.0 (30905679)|VARIABLE_ASSIGNMENT|[590]|depall|{"Id":"a0J8d000001pT51EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":630.00,"Istenantmoved__c":true,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000G2HKBAA3","Deposit_Holder__r":{"Id":"0018d00000G2HKBAA3","Salutation":"Miss","FirstName":"Nicoletta","LastName":"Gambro","Name":"Nicoletta Gambro","PersonEmail":"nikkilg246@gmail.com","Phone":"07580535514"}}|0xaf2f399
+11:17:33.0 (30917472)|STATEMENT_EXECUTE|[591]
+11:17:33.0 (30919756)|STATEMENT_EXECUTE|[592]
+11:17:33.0 (30926611)|HEAP_ALLOCATE|[592]|Bytes:12
+11:17:33.0 (30959087)|CONSTRUCTOR_ENTRY|[592]|01p8d00000BXTIh|<init>(Deposit_Allocation__c)|EI_TenentChangeoverApx.depositwrapper
+11:17:33.0 (30966981)|VARIABLE_SCOPE_BEGIN|[1384]|this|EI_TenentChangeoverApx.depositwrapper|true|false
+11:17:33.0 (30987121)|VARIABLE_ASSIGNMENT|[1384]|this|{}|0x5ee8e5fd
+11:17:33.0 (30994507)|VARIABLE_SCOPE_BEGIN|[1384]|Depallobject|Deposit_Allocation__c|true|false
+11:17:33.0 (31022189)|VARIABLE_ASSIGNMENT|[1384]|Depallobject|{"Id":"a0J8d000001pT51EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":630.00,"Istenantmoved__c":true,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000G2HKBAA3","Deposit_Holder__r":{"Id":"0018d00000G2HKBAA3","Salutation":"Miss","FirstName":"Nicoletta","LastName":"Gambro","Name":"Nicoletta Gambro","PersonEmail":"nikkilg246@gmail.com","Phone":"07580535514"}}|0xaf2f399
+11:17:33.0 (31033439)|STATEMENT_EXECUTE|[1376]
+11:17:33.0 (31035553)|STATEMENT_EXECUTE|[1377]
+11:17:33.0 (31037263)|STATEMENT_EXECUTE|[1378]
+11:17:33.0 (31051940)|STATEMENT_EXECUTE|[1384]
+11:17:33.0 (31053792)|STATEMENT_EXECUTE|[1385]
+11:17:33.0 (31060245)|SYSTEM_METHOD_ENTRY|[1385]|EI_TenentChangeoverApx.depositwrapper.__sfdc_Depallobject(Deposit_Allocation__c)
+11:17:33.0 (31074628)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x5ee8e5fd
+11:17:33.0 (31119515)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"Id":"a0J8d000001pT51EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":630.00,"Istenantmoved__c":true,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000G2HKBAA3","Deposit_Holder__r":{"Id":"0018d00000G2HKBAA3","Salutation":"Miss","FirstName":"Nicoletta","LastName":"Gambro","Name":"Nicoletta Gambro","PersonEmail":"nikkilg246@gmail.com","Phone":"07580535514"}}|0xaf2f399
+11:17:33.0 (31176529)|VARIABLE_ASSIGNMENT|[1378]|this.Depallobject|{"Id":"a0J8d000001pT51EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":630.00,"Istenantmoved__c":true,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000G2HKBAA3","Deposit_Holder__r":{"Id":"0018d00000G2HKBAA3","Salutation":"Miss","FirstName":"Nicoletta","LastName":"Gambro","Name":"Nicoletta Gambro","PersonEmail":"nikkilg246@gmail.com","Phone":"07580535514"}}|0x5ee8e5fd
+11:17:33.0 (31194352)|SYSTEM_METHOD_EXIT|[1385]|EI_TenentChangeoverApx.depositwrapper.__sfdc_Depallobject(Deposit_Allocation__c)
+11:17:33.0 (31220895)|CONSTRUCTOR_EXIT|[592]|01p8d00000BXTIh|<init>(Deposit_Allocation__c)|EI_TenentChangeoverApx.depositwrapper
+11:17:33.0 (31244138)|SYSTEM_METHOD_ENTRY|[592]|List<EI_TenentChangeoverApx.depositwrapper>.add(Object)
+11:17:33.0 (31261940)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+11:17:33.0 (31274474)|SYSTEM_METHOD_EXIT|[592]|List<EI_TenentChangeoverApx.depositwrapper>.add(Object)
+11:17:33.0 (31286406)|METHOD_ENTRY|[590]||Database.QueryLocatorIterator.hasNext()
+11:17:33.0 (31328695)|METHOD_EXIT|[590]||Database.QueryLocatorIterator.hasNext()
+11:17:33.0 (31342547)|METHOD_ENTRY|[590]||Database.QueryLocatorIterator.next()
+11:17:33.0 (31429566)|METHOD_EXIT|[590]||Database.QueryLocatorIterator.next()
+11:17:33.0 (31438847)|VARIABLE_SCOPE_BEGIN|[590]|depall|Deposit_Allocation__c|true|false
+11:17:33.0 (31493439)|VARIABLE_ASSIGNMENT|[590]|depall|{"Id":"a0J8d000001pT52EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":0.00,"Istenantmoved__c":false,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000G2HKCAA3","Deposit_Holder__r":{"Id":"0018d00000G2HKCAA3","Salutation":"Miss","FirstName":"Clara","LastName":"Hammersley","Name":"Clara Hammersley","PersonEmail":"hammersleyclara@gmai (5 more) ...","Phone":"07555143705"}}|0x22bf996e
+11:17:33.0 (31509530)|STATEMENT_EXECUTE|[591]
+11:17:33.0 (31517009)|STATEMENT_EXECUTE|[592]
+11:17:33.0 (31523601)|HEAP_ALLOCATE|[592]|Bytes:12
+11:17:33.0 (31537454)|CONSTRUCTOR_ENTRY|[592]|01p8d00000BXTIh|<init>(Deposit_Allocation__c)|EI_TenentChangeoverApx.depositwrapper
+11:17:33.0 (31545647)|VARIABLE_SCOPE_BEGIN|[1384]|this|EI_TenentChangeoverApx.depositwrapper|true|false
+11:17:33.0 (31563054)|VARIABLE_ASSIGNMENT|[1384]|this|{}|0x8c010af
+11:17:33.0 (31569129)|VARIABLE_SCOPE_BEGIN|[1384]|Depallobject|Deposit_Allocation__c|true|false
+11:17:33.0 (31596665)|VARIABLE_ASSIGNMENT|[1384]|Depallobject|{"Id":"a0J8d000001pT52EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":0.00,"Istenantmoved__c":false,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000G2HKCAA3","Deposit_Holder__r":{"Id":"0018d00000G2HKCAA3","Salutation":"Miss","FirstName":"Clara","LastName":"Hammersley","Name":"Clara Hammersley","PersonEmail":"hammersleyclara@gmai (5 more) ...","Phone":"07555143705"}}|0x22bf996e
+11:17:33.0 (31606577)|STATEMENT_EXECUTE|[1376]
+11:17:33.0 (31608562)|STATEMENT_EXECUTE|[1377]
+11:17:33.0 (31610448)|STATEMENT_EXECUTE|[1378]
+11:17:33.0 (31623376)|STATEMENT_EXECUTE|[1384]
+11:17:33.0 (31625405)|STATEMENT_EXECUTE|[1385]
+11:17:33.0 (31630594)|SYSTEM_METHOD_ENTRY|[1385]|EI_TenentChangeoverApx.depositwrapper.__sfdc_Depallobject(Deposit_Allocation__c)
+11:17:33.0 (31644333)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x8c010af
+11:17:33.0 (31670966)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"Id":"a0J8d000001pT52EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":0.00,"Istenantmoved__c":false,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000G2HKCAA3","Deposit_Holder__r":{"Id":"0018d00000G2HKCAA3","Salutation":"Miss","FirstName":"Clara","LastName":"Hammersley","Name":"Clara Hammersley","PersonEmail":"hammersleyclara@gmai (5 more) ...","Phone":"07555143705"}}|0x22bf996e
+11:17:33.0 (31701376)|VARIABLE_ASSIGNMENT|[1378]|this.Depallobject|{"Id":"a0J8d000001pT52EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":0.00,"Istenantmoved__c":false,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000G2HKCAA3","Deposit_Holder__r":{"Id":"0018d00000G2HKCAA3","Salutation":"Miss","FirstName":"Clara","LastName":"Hammersley","Name":"Clara Hammersley","PersonEmail":"hammersleyclara@gmai (5 more) ...","Phone":"07555143705"}}|0x8c010af
+11:17:33.0 (31712007)|SYSTEM_METHOD_EXIT|[1385]|EI_TenentChangeoverApx.depositwrapper.__sfdc_Depallobject(Deposit_Allocation__c)
+11:17:33.0 (31720218)|CONSTRUCTOR_EXIT|[592]|01p8d00000BXTIh|<init>(Deposit_Allocation__c)|EI_TenentChangeoverApx.depositwrapper
+11:17:33.0 (31735351)|SYSTEM_METHOD_ENTRY|[592]|List<EI_TenentChangeoverApx.depositwrapper>.add(Object)
+11:17:33.0 (31741616)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+11:17:33.0 (31750088)|SYSTEM_METHOD_EXIT|[592]|List<EI_TenentChangeoverApx.depositwrapper>.add(Object)
+11:17:33.0 (31757196)|METHOD_ENTRY|[590]||Database.QueryLocatorIterator.hasNext()
+11:17:33.0 (31778713)|METHOD_EXIT|[590]||Database.QueryLocatorIterator.hasNext()
+11:17:33.0 (31784543)|METHOD_ENTRY|[590]||Database.QueryLocatorIterator.next()
+11:17:33.0 (31835250)|METHOD_EXIT|[590]||Database.QueryLocatorIterator.next()
+11:17:33.0 (31841020)|VARIABLE_SCOPE_BEGIN|[590]|depall|Deposit_Allocation__c|true|false
+11:17:33.0 (31872039)|VARIABLE_ASSIGNMENT|[590]|depall|{"Id":"a0J8d000001pT53EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":630.00,"Istenantmoved__c":true,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000G2HKDAA3","Deposit_Holder__r":{"Id":"0018d00000G2HKDAA3","Salutation":"Miss","FirstName":"Rachel","LastName":"Syme","Name":"Rachel Syme","PersonEmail":"rachelsyme2@live.co. (2 more) ...","Phone":"07825651706"}}|0x15b35415
+11:17:33.0 (31881120)|STATEMENT_EXECUTE|[591]
+11:17:33.0 (31882977)|STATEMENT_EXECUTE|[592]
+11:17:33.0 (31887192)|HEAP_ALLOCATE|[592]|Bytes:12
+11:17:33.0 (31896167)|CONSTRUCTOR_ENTRY|[592]|01p8d00000BXTIh|<init>(Deposit_Allocation__c)|EI_TenentChangeoverApx.depositwrapper
+11:17:33.0 (31903113)|VARIABLE_SCOPE_BEGIN|[1384]|this|EI_TenentChangeoverApx.depositwrapper|true|false
+11:17:33.0 (31917660)|VARIABLE_ASSIGNMENT|[1384]|this|{}|0xced8c53
+11:17:33.0 (31923746)|VARIABLE_SCOPE_BEGIN|[1384]|Depallobject|Deposit_Allocation__c|true|false
+11:17:33.0 (31949421)|VARIABLE_ASSIGNMENT|[1384]|Depallobject|{"Id":"a0J8d000001pT53EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":630.00,"Istenantmoved__c":true,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000G2HKDAA3","Deposit_Holder__r":{"Id":"0018d00000G2HKDAA3","Salutation":"Miss","FirstName":"Rachel","LastName":"Syme","Name":"Rachel Syme","PersonEmail":"rachelsyme2@live.co. (2 more) ...","Phone":"07825651706"}}|0x15b35415
+11:17:33.0 (31958685)|STATEMENT_EXECUTE|[1376]
+11:17:33.0 (31960730)|STATEMENT_EXECUTE|[1377]
+11:17:33.0 (31962439)|STATEMENT_EXECUTE|[1378]
+11:17:33.0 (31972965)|STATEMENT_EXECUTE|[1384]
+11:17:33.0 (31975422)|STATEMENT_EXECUTE|[1385]
+11:17:33.0 (31979629)|SYSTEM_METHOD_ENTRY|[1385]|EI_TenentChangeoverApx.depositwrapper.__sfdc_Depallobject(Deposit_Allocation__c)
+11:17:33.0 (31997164)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0xced8c53
+11:17:33.0 (32023335)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"Id":"a0J8d000001pT53EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":630.00,"Istenantmoved__c":true,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000G2HKDAA3","Deposit_Holder__r":{"Id":"0018d00000G2HKDAA3","Salutation":"Miss","FirstName":"Rachel","LastName":"Syme","Name":"Rachel Syme","PersonEmail":"rachelsyme2@live.co. (2 more) ...","Phone":"07825651706"}}|0x15b35415
+11:17:33.0 (32053319)|VARIABLE_ASSIGNMENT|[1378]|this.Depallobject|{"Id":"a0J8d000001pT53EAE","Deposit__c":"a0L8d000000fUm1EAE","Tenencychangeoveramount__c":630.00,"Istenantmoved__c":true,"Role__c":"Tenant","Is_Lead__c":false,"Deposit_Holder__c":"0018d00000G2HKDAA3","Deposit_Holder__r":{"Id":"0018d00000G2HKDAA3","Salutation":"Miss","FirstName":"Rachel","LastName":"Syme","Name":"Rachel Syme","PersonEmail":"rachelsyme2@live.co. (2 more) ...","Phone":"07825651706"}}|0xced8c53
+11:17:33.0 (32063655)|SYSTEM_METHOD_EXIT|[1385]|EI_TenentChangeoverApx.depositwrapper.__sfdc_Depallobject(Deposit_Allocation__c)
+11:17:33.0 (32071126)|CONSTRUCTOR_EXIT|[592]|01p8d00000BXTIh|<init>(Deposit_Allocation__c)|EI_TenentChangeoverApx.depositwrapper
+11:17:33.0 (32083717)|SYSTEM_METHOD_ENTRY|[592]|List<EI_TenentChangeoverApx.depositwrapper>.add(Object)
+11:17:33.0 (32089433)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+11:17:33.0 (32097324)|SYSTEM_METHOD_EXIT|[592]|List<EI_TenentChangeoverApx.depositwrapper>.add(Object)
+11:17:33.0 (32103756)|METHOD_ENTRY|[590]||Database.QueryLocatorIterator.hasNext()
+11:17:33.0 (32116682)|METHOD_EXIT|[590]||Database.QueryLocatorIterator.hasNext()
+11:17:33.0 (32125130)|VARIABLE_ASSIGNMENT|[590]|depall|null|
+11:17:33.0 (32157317)|STATEMENT_EXECUTE|[596]
+11:17:33.0 (32169485)|SYSTEM_MODE_EXIT|true
+11:17:33.32 (32889863)|CUMULATIVE_LIMIT_USAGE
+11:17:33.32 (32889863)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+11:17:33.32 (32889863)|TOTAL_EMAIL_RECIPIENTS_QUEUED|0
+11:17:33.32 (32889863)|STATIC_VARIABLE_LIST|
+  int:BYTES:0
+  int:BYTES:0
+  byte[]:DigitOnes:0
+  byte[]:DigitTens:0
+  Boolean:FALSE:0
+  int:MAX_EXPONENT:0
+  double:MAX_VALUE:0
+  int:MAX_VALUE:0
+  int:MIN_EXPONENT:0
+  double:MIN_NORMAL:0
+  double:MIN_VALUE:0
+  int:MIN_VALUE:0
+  double:NEGATIVE_INFINITY:0
+  double:NaN:0
+  double:POSITIVE_INFINITY:0
+  int:SIZE:0
+  int:SIZE:0
+  Boolean:TRUE:0
+  String:__sfdcInnerTypes:0
+  String:__sfdcParameterizedTypes:0
+  String:__sfdcProperties:0
+  String:_sfdcAdditionalCodeLocations:0
+  String:_sfdcAdditionalCodeLocations:0
+  String:_sfdcAdditionalCodeLocations:0
+  String:_sfdcAdditionalCodeLocations:0
+  String:_sfdcSuppressedCodeLocations:0
+  char[]:digits:0
+  long:serialVersionUID:0
+  long:serialVersionUID:0
+  long:serialVersionUID:0
+  int[]:sizeTable:0
+
+11:17:33.32 (32889863)|CUMULATIVE_LIMIT_USAGE_END
+
+11:17:33.0 (33127604)|CODE_UNIT_FINISHED|EI_TenentChangeoverApx.getdeposittenantdetails(String, String)
+11:17:33.33 (33189709)|CUMULATIVE_PROFILING_BEGIN
+11:17:33.33 (33189709)|CUMULATIVE_PROFILING|SOQL operations|
+Class.EI_TenentChangeoverApx.getdeposittenantdetails: line 590, column 1: [select id,Deposit__c,Tenencychangeoveramount__c, Istenantmoved__c,Role__c,Is_Lead__c, Deposit_Holder__c,Deposit_Holder__r.Id,Deposit_Holder__r.Salutation,Deposit_Holder__r.FirstName, Deposit_Holder__r.LastName, Deposit_Holder__r.Name, Deposit_Holder__r.PersonEmail, Deposit_Holder__r.Phone,Deposit_Holder__r.PersonMailingStreet,Deposit_Holder__r.PersonMailingCity,Deposit_Holder__r.PersonMailingCountry,Deposit_Holder__r.PersonMailingPostalCode from Deposit_Allocation__c where Deposit__c=:depositId and Role__c='Tenant']: executed 11 times in 14 ms
+Class.EI_TenentChangeoverApx.getdeposittenantdetails: line 580, column 1: [select id,name,Deposit_Amount__c,Protected_Amount__c,Start_Date__c,Number_of_Tenants__c,Scheme__c,Property__c,Property_Address__c from deposit__C where id=:depositId]: executed 5 times in 11 ms
+
+11:17:33.33 (33189709)|CUMULATIVE_PROFILING|No profiling information for SOSL operations
+11:17:33.33 (33189709)|CUMULATIVE_PROFILING|No profiling information for DML operations
+11:17:33.33 (33189709)|CUMULATIVE_PROFILING|method invocations|
+External entry point: public static List<EI_TenentChangeoverApx.depositwrapper> getdeposittenantdetails(String, String): executed 1 time in 30 ms
+Class.EI_TenentChangeoverApx.getdeposittenantdetails: line 592, column 1: public EI_TenentChangeoverApx.depositwrapper(Deposit_Allocation__c): executed 8 times in 1 ms
+Class.EI_TenentChangeoverApx.getdeposittenantdetails: line 582, column 1: public EI_TenentChangeoverApx.depositwrapper(Deposit__c): executed 2 times in 1 ms
+Class.EI_TenentChangeoverApx.depositwrapper.<init>: line 1381, column 1: public void __sfdc_Depositobject(Deposit__c): executed 1 time in 1 ms
+Class.EI_TenentChangeoverApx.depositwrapper.<init>: line 1381, column 1: public void __sfdc_Depositobject(Deposit__c): executed 1 time in 1 ms
+Class.EI_TenentChangeoverApx.getdeposittenantdetails: line 579, column 1: global public List<EI_TenentChangeoverApx.depositwrapper>(): executed 1 time in 0 ms
+Class.EI_TenentChangeoverApx.depositwrapper.<init>: line 1385, column 1: public void __sfdc_Depallobject(Deposit_Allocation__c): executed 4 times in 0 ms
+Class.EI_TenentChangeoverApx.depositwrapper.<init>: line 1385, column 1: public void __sfdc_Depallobject(Deposit_Allocation__c): executed 4 times in 0 ms
+
+11:17:33.33 (33189709)|CUMULATIVE_PROFILING_END
+11:17:33.0 (34187543)|CODE_UNIT_FINISHED|apex://EI_TenentChangeoverApx/ACTION$getdeposittenantdetails
+11:17:33.0 (34206854)|EXECUTION_FINISHED

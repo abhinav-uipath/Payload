@@ -1,0 +1,112 @@
+58.0 APEX_CODE,FINEST;APEX_PROFILING,FINE;CALLOUT,FINER;DB,FINEST;NBA,NONE;SYSTEM,FINE;VALIDATION,INFO;VISUALFORCE,FINE;WAVE,NONE;WORKFLOW,INFO
+11:17:32.0 (349062)|USER_INFO|[EXTERNAL]|0058d000004De5F|sharon.murray@sandstoneuk.com|(GMT+01:00) British Summer Time (Europe/London)|GMT+01:00
+11:17:32.0 (442313)|EXECUTION_STARTED
+11:17:32.0 (465053)|CODE_UNIT_STARTED|[EXTERNAL]|apex://EI_TenentChangeoverApx/ACTION$getLoggedInUserAccountId
+11:17:32.0 (1347613)|CODE_UNIT_STARTED|[EXTERNAL]|01p8d00000BXTIh|EI_TenentChangeoverApx.getLoggedInUserAccountId()
+11:17:32.0 (1719555)|HEAP_ALLOCATE|[79]|Bytes:3
+11:17:32.0 (1850668)|HEAP_ALLOCATE|[84]|Bytes:152
+11:17:32.0 (1874761)|HEAP_ALLOCATE|[399]|Bytes:408
+11:17:32.0 (1894564)|HEAP_ALLOCATE|[412]|Bytes:408
+11:17:32.0 (1911142)|HEAP_ALLOCATE|[520]|Bytes:48
+11:17:32.0 (1945515)|HEAP_ALLOCATE|[139]|Bytes:6
+11:17:32.0 (1967447)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:27
+11:17:32.0 (1977072)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:141
+11:17:32.0 (1983247)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:222
+11:17:32.0 (2012678)|METHOD_ENTRY|[1]|01p8d00000BXTIh|EI_TenentChangeoverApx.EI_TenentChangeoverApx()
+11:17:32.0 (2026377)|STATEMENT_EXECUTE|[1]
+11:17:32.0 (2034369)|STATEMENT_EXECUTE|[1]
+11:17:32.0 (2079484)|HEAP_ALLOCATE|[52]|Bytes:5
+11:17:32.0 (2126378)|HEAP_ALLOCATE|[58]|Bytes:5
+11:17:32.0 (2147828)|HEAP_ALLOCATE|[66]|Bytes:7
+11:17:32.0 (2196441)|SYSTEM_MODE_ENTER|true
+11:17:32.0 (2230318)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+11:17:32.0 (2237523)|STATEMENT_EXECUTE|[1376]
+11:17:32.0 (2240670)|STATEMENT_EXECUTE|[1470]
+11:17:32.0 (2250420)|SYSTEM_MODE_EXIT|true
+11:17:32.0 (6079849)|METHOD_EXIT|[1]|EI_TenentChangeoverApx
+11:17:32.0 (6124652)|SYSTEM_MODE_ENTER|true
+11:17:32.0 (6143088)|HEAP_ALLOCATE|[43]|Bytes:5
+11:17:32.0 (6150739)|STATEMENT_EXECUTE|[42]
+11:17:32.0 (6153207)|STATEMENT_EXECUTE|[43]
+11:17:32.0 (6157241)|HEAP_ALLOCATE|[43]|Bytes:58
+11:17:32.0 (6195081)|HEAP_ALLOCATE|[43]|Bytes:4
+11:17:32.0 (6209979)|HEAP_ALLOCATE|[43]|Bytes:7
+11:17:32.0 (6271541)|HEAP_ALLOCATE|[43]|Bytes:101
+11:17:32.0 (6283616)|SYSTEM_METHOD_ENTRY|[1]|UserInfo.UserInfo()
+11:17:32.0 (6287199)|STATEMENT_EXECUTE|[1]
+11:17:32.0 (6297826)|SYSTEM_METHOD_EXIT|[1]|UserInfo
+11:17:32.0 (7264061)|METHOD_ENTRY|[43]||System.UserInfo.getUserId()
+11:17:32.0 (9798420)|METHOD_EXIT|[43]||System.UserInfo.getUserId()
+11:17:32.0 (12306554)|SOQL_EXECUTE_BEGIN|[43]|Aggregations:0|SELECT contact.AccountId, id FROM user WHERE id = :tmpVar1
+11:17:32.0 (256307566)|SOQL_EXECUTE_EXPLAIN|[43]|No explain plan is available
+11:17:32.0 (256330533)|SOQL_EXECUTE_END|[43]|Rows:1
+11:17:32.0 (256372114)|HEAP_ALLOCATE|[43]|Bytes:8
+11:17:32.0 (256419797)|HEAP_ALLOCATE|[43]|Bytes:130
+11:17:32.0 (256577549)|HEAP_ALLOCATE|[43]|Bytes:8
+11:17:32.0 (256599146)|HEAP_ALLOCATE|[43]|Bytes:30
+11:17:32.0 (256672326)|HEAP_ALLOCATE|[43]|Bytes:16
+11:17:32.0 (256695946)|VARIABLE_SCOPE_BEGIN|[43]|tenantAccount|User|true|false
+11:17:32.0 (256783883)|VARIABLE_ASSIGNMENT|[43]|tenantAccount|{"ContactId":"0038d00000DUfyfAAD","Id":"0058d000004De5FAAS","Contact":{"AccountId":"0018d00000C7Qe6AAF","Id":"0038d00000DUfyfAAD"}}|0x64e63831
+11:17:32.0 (256792671)|STATEMENT_EXECUTE|[44]
+11:17:32.0 (256998651)|HEAP_ALLOCATE|[44]|Bytes:18
+11:17:32.0 (257018132)|SYSTEM_MODE_EXIT|true
+11:17:32.257 (257688721)|CUMULATIVE_LIMIT_USAGE
+11:17:32.257 (257688721)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+11:17:32.257 (257688721)|TOTAL_EMAIL_RECIPIENTS_QUEUED|0
+11:17:32.257 (257688721)|STATIC_VARIABLE_LIST|
+  int:BYTES:0
+  int:BYTES:0
+  byte[]:DigitOnes:0
+  byte[]:DigitTens:0
+  Boolean:FALSE:0
+  int:MAX_EXPONENT:0
+  double:MAX_VALUE:0
+  int:MAX_VALUE:0
+  int:MIN_EXPONENT:0
+  double:MIN_NORMAL:0
+  double:MIN_VALUE:0
+  int:MIN_VALUE:0
+  double:NEGATIVE_INFINITY:0
+  double:NaN:0
+  double:POSITIVE_INFINITY:0
+  int:SIZE:0
+  int:SIZE:0
+  Boolean:TRUE:0
+  String:__sfdcInnerTypes:0
+  String:_sfdcAdditionalCodeLocations:0
+  String:_sfdcAdditionalCodeLocations:0
+  String:_sfdcSuppressedCodeLocations:0
+  char[]:digits:0
+  long:serialVersionUID:0
+  long:serialVersionUID:0
+  long:serialVersionUID:0
+  int[]:sizeTable:0
+
+11:17:32.257 (257688721)|CUMULATIVE_LIMIT_USAGE_END
+
+11:17:32.0 (257928623)|CODE_UNIT_FINISHED|EI_TenentChangeoverApx.getLoggedInUserAccountId()
+11:17:32.257 (257965429)|CUMULATIVE_PROFILING_BEGIN
+11:17:32.257 (257965429)|CUMULATIVE_PROFILING|No profiling information for SOQL operations
+11:17:32.257 (257965429)|CUMULATIVE_PROFILING|No profiling information for SOSL operations
+11:17:32.257 (257965429)|CUMULATIVE_PROFILING|No profiling information for DML operations
+11:17:32.257 (257965429)|CUMULATIVE_PROFILING|method invocations|
+External entry point: public static String getLoggedInUserAccountId(): executed 1 time in 256 ms
+Class.EI_TenentChangeoverApx.getLoggedInUserAccountId: line 43, column 1: global static String getUserId(): executed 2 times in 249 ms
+
+11:17:32.257 (257965429)|CUMULATIVE_PROFILING_END
+11:17:32.0 (259570780)|CODE_UNIT_FINISHED|apex://EI_TenentChangeoverApx/ACTION$getLoggedInUserAccountId
+11:17:32.0 (259594555)|EXECUTION_FINISHED

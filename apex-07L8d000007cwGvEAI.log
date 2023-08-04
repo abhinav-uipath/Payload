@@ -1,0 +1,164 @@
+58.0 APEX_CODE,FINEST;APEX_PROFILING,FINE;CALLOUT,FINER;DB,FINEST;NBA,NONE;SYSTEM,FINE;VALIDATION,INFO;VISUALFORCE,FINE;WAVE,NONE;WORKFLOW,INFO
+11:17:25.0 (223964)|USER_INFO|[EXTERNAL]|0058d000004De5F|sharon.murray@sandstoneuk.com|(GMT+01:00) British Summer Time (Europe/London)|GMT+01:00
+11:17:25.0 (295879)|EXECUTION_STARTED
+11:17:25.0 (307505)|CODE_UNIT_STARTED|[EXTERNAL]|apex://EI_Replace_Primary_landlord/ACTION$landlordRegistrationallstatusReplace
+11:17:25.0 (1262311)|CODE_UNIT_STARTED|[EXTERNAL]|01p8d00000BXTI1|EI_Replace_Primary_landlord.landlordRegistrationallstatusReplace()
+11:17:25.0 (1537228)|HEAP_ALLOCATE|[79]|Bytes:3
+11:17:25.0 (1648972)|HEAP_ALLOCATE|[84]|Bytes:152
+11:17:25.0 (1673627)|HEAP_ALLOCATE|[399]|Bytes:408
+11:17:25.0 (1700483)|HEAP_ALLOCATE|[412]|Bytes:408
+11:17:25.0 (1725015)|HEAP_ALLOCATE|[520]|Bytes:48
+11:17:25.0 (1760372)|HEAP_ALLOCATE|[139]|Bytes:6
+11:17:25.0 (1782898)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:21
+11:17:25.0 (1791675)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:15
+11:17:25.0 (1807145)|METHOD_ENTRY|[1]|01p8d00000BXTI1|EI_Replace_Primary_landlord.EI_Replace_Primary_landlord()
+11:17:25.0 (1817505)|STATEMENT_EXECUTE|[1]
+11:17:25.0 (1823263)|STATEMENT_EXECUTE|[1]
+11:17:25.0 (1860185)|HEAP_ALLOCATE|[52]|Bytes:5
+11:17:25.0 (1886857)|HEAP_ALLOCATE|[58]|Bytes:5
+11:17:25.0 (1899454)|HEAP_ALLOCATE|[66]|Bytes:7
+11:17:25.0 (1935809)|SYSTEM_MODE_ENTER|true
+11:17:25.0 (1952173)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+11:17:25.0 (1964244)|SYSTEM_MODE_EXIT|true
+11:17:25.0 (1980432)|METHOD_EXIT|[1]|EI_Replace_Primary_landlord
+11:17:25.0 (2003135)|SYSTEM_MODE_ENTER|true
+11:17:25.0 (2011665)|HEAP_ALLOCATE|[156]|Bytes:5
+11:17:25.0 (2018247)|STATEMENT_EXECUTE|[155]
+11:17:25.0 (2021002)|STATEMENT_EXECUTE|[156]
+11:17:25.0 (2037874)|HEAP_ALLOCATE|[156]|Bytes:4
+11:17:25.0 (2055014)|VARIABLE_SCOPE_BEGIN|[156]|lanRegStatusList|Map<String,String>|true|false
+11:17:25.0 (2118427)|VARIABLE_ASSIGNMENT|[156]|lanRegStatusList|{}|0x6b2f2064
+11:17:25.0 (2127801)|STATEMENT_EXECUTE|[157]
+11:17:25.0 (2132630)|HEAP_ALLOCATE|[156]|Bytes:7
+11:17:25.0 (2139970)|HEAP_ALLOCATE|[156]|Bytes:32
+11:17:25.0 (3108957)|SYSTEM_METHOD_ENTRY|[157]|Schema.SObjectField.getDescribe()
+11:17:25.0 (4310837)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+11:17:25.0 (8806634)|HEAP_ALLOCATE|[157]|Bytes:8
+11:17:25.0 (8844017)|SYSTEM_METHOD_EXIT|[157]|Schema.SObjectField.getDescribe()
+11:17:25.0 (8883724)|VARIABLE_SCOPE_BEGIN|[157]|fieldResultRegStatus|Schema.DescribeFieldResult|true|false
+11:17:25.0 (9870209)|VARIABLE_ASSIGNMENT|[157]|fieldResultRegStatus|"common.api.soap.wsdl.Field@f9f38599"|0x655fa6c4
+11:17:25.0 (9891769)|STATEMENT_EXECUTE|[158]
+11:17:25.0 (9978595)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:20
+11:17:25.0 (10108026)|HEAP_ALLOCATE|[158]|Bytes:20
+11:17:25.0 (10129043)|VARIABLE_SCOPE_BEGIN|[158]|regStatusValues|List<Schema.PicklistEntry>|true|false
+11:17:25.0 (10179678)|VARIABLE_ASSIGNMENT|[158]|regStatusValues|[Landlord is entered on the local authority register for the area where this property is located,Landlord has made an application, but has not yet been entered on the local authority register,Landlord is appealing a decision to remove their entry from the local authority register,Landlord is not registered]|0x2f5190eb
+11:17:25.0 (10259939)|SYSTEM_METHOD_ENTRY|[159]|List<Schema.PicklistEntry>.iterator()
+11:17:25.0 (10402833)|SYSTEM_METHOD_EXIT|[159]|List<Schema.PicklistEntry>.iterator()
+11:17:25.0 (10427449)|SYSTEM_METHOD_ENTRY|[159]|system.ListIterator.hasNext()
+11:17:25.0 (10443040)|HEAP_ALLOCATE|[159]|Bytes:5
+11:17:25.0 (10453839)|SYSTEM_METHOD_EXIT|[159]|system.ListIterator.hasNext()
+11:17:25.0 (10524112)|HEAP_ALLOCATE|[159]|Bytes:4
+11:17:25.0 (10555316)|VARIABLE_SCOPE_BEGIN|[159]|p|Schema.PicklistEntry|true|false
+11:17:25.0 (10579172)|VARIABLE_ASSIGNMENT|[159]|p|Landlord is entered on the local authority register for the area where this property is located|0x58959fea
+11:17:25.0 (10589451)|STATEMENT_EXECUTE|[159]
+11:17:25.0 (10592331)|STATEMENT_EXECUTE|[160]
+11:17:25.0 (10614403)|HEAP_ALLOCATE|[160]|Bytes:95
+11:17:25.0 (10629830)|HEAP_ALLOCATE|[160]|Bytes:95
+11:17:25.0 (10674921)|SYSTEM_METHOD_ENTRY|[160]|Map<String,String>.put(Object, Object)
+11:17:25.0 (10699859)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+11:17:25.0 (10717147)|SYSTEM_METHOD_EXIT|[160]|Map<String,String>.put(Object, Object)
+11:17:25.0 (10728608)|SYSTEM_METHOD_ENTRY|[159]|system.ListIterator.hasNext()
+11:17:25.0 (10738648)|HEAP_ALLOCATE|[159]|Bytes:5
+11:17:25.0 (10746954)|SYSTEM_METHOD_EXIT|[159]|system.ListIterator.hasNext()
+11:17:25.0 (10758670)|HEAP_ALLOCATE|[159]|Bytes:4
+11:17:25.0 (10777033)|VARIABLE_SCOPE_BEGIN|[159]|p|Schema.PicklistEntry|true|false
+11:17:25.0 (10796390)|VARIABLE_ASSIGNMENT|[159]|p|Landlord has made an application, but has not yet been entered on the local authority register|0x7be08adb
+11:17:25.0 (10805453)|STATEMENT_EXECUTE|[159]
+11:17:25.0 (10808321)|STATEMENT_EXECUTE|[160]
+11:17:25.0 (10818299)|HEAP_ALLOCATE|[160]|Bytes:94
+11:17:25.0 (10829541)|HEAP_ALLOCATE|[160]|Bytes:94
+11:17:25.0 (10847251)|SYSTEM_METHOD_ENTRY|[160]|Map<String,String>.put(Object, Object)
+11:17:25.0 (10854785)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+11:17:25.0 (10869163)|SYSTEM_METHOD_EXIT|[160]|Map<String,String>.put(Object, Object)
+11:17:25.0 (10878673)|SYSTEM_METHOD_ENTRY|[159]|system.ListIterator.hasNext()
+11:17:25.0 (10886819)|HEAP_ALLOCATE|[159]|Bytes:5
+11:17:25.0 (10895128)|SYSTEM_METHOD_EXIT|[159]|system.ListIterator.hasNext()
+11:17:25.0 (10904853)|HEAP_ALLOCATE|[159]|Bytes:4
+11:17:25.0 (10921694)|VARIABLE_SCOPE_BEGIN|[159]|p|Schema.PicklistEntry|true|false
+11:17:25.0 (10947346)|VARIABLE_ASSIGNMENT|[159]|p|Landlord is appealing a decision to remove their entry from the local authority register|0x761bee74
+11:17:25.0 (10955835)|STATEMENT_EXECUTE|[159]
+11:17:25.0 (10958375)|STATEMENT_EXECUTE|[160]
+11:17:25.0 (10966335)|HEAP_ALLOCATE|[160]|Bytes:88
+11:17:25.0 (10975678)|HEAP_ALLOCATE|[160]|Bytes:88
+11:17:25.0 (10994532)|SYSTEM_METHOD_ENTRY|[160]|Map<String,String>.put(Object, Object)
+11:17:25.0 (11001232)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+11:17:25.0 (11016258)|SYSTEM_METHOD_EXIT|[160]|Map<String,String>.put(Object, Object)
+11:17:25.0 (11024946)|SYSTEM_METHOD_ENTRY|[159]|system.ListIterator.hasNext()
+11:17:25.0 (11032919)|HEAP_ALLOCATE|[159]|Bytes:5
+11:17:25.0 (11040148)|SYSTEM_METHOD_EXIT|[159]|system.ListIterator.hasNext()
+11:17:25.0 (11050034)|HEAP_ALLOCATE|[159]|Bytes:4
+11:17:25.0 (11066773)|VARIABLE_SCOPE_BEGIN|[159]|p|Schema.PicklistEntry|true|false
+11:17:25.0 (11084134)|VARIABLE_ASSIGNMENT|[159]|p|Landlord is not registered|0x15d9995b
+11:17:25.0 (11134488)|STATEMENT_EXECUTE|[159]
+11:17:25.0 (11137505)|STATEMENT_EXECUTE|[160]
+11:17:25.0 (11145782)|HEAP_ALLOCATE|[160]|Bytes:26
+11:17:25.0 (11156116)|HEAP_ALLOCATE|[160]|Bytes:26
+11:17:25.0 (11174531)|SYSTEM_METHOD_ENTRY|[160]|Map<String,String>.put(Object, Object)
+11:17:25.0 (11181916)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+11:17:25.0 (11196705)|SYSTEM_METHOD_EXIT|[160]|Map<String,String>.put(Object, Object)
+11:17:25.0 (11206161)|SYSTEM_METHOD_ENTRY|[159]|system.ListIterator.hasNext()
+11:17:25.0 (11214383)|HEAP_ALLOCATE|[159]|Bytes:5
+11:17:25.0 (11221935)|SYSTEM_METHOD_EXIT|[159]|system.ListIterator.hasNext()
+11:17:25.0 (11235602)|VARIABLE_ASSIGNMENT|[159]|p|null|
+11:17:25.0 (11243794)|STATEMENT_EXECUTE|[162]
+11:17:25.0 (11258488)|SYSTEM_MODE_EXIT|true
+11:17:25.11 (11352953)|CUMULATIVE_LIMIT_USAGE
+11:17:25.11 (11352953)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+11:17:25.11 (11352953)|TOTAL_EMAIL_RECIPIENTS_QUEUED|0
+11:17:25.11 (11352953)|STATIC_VARIABLE_LIST|
+  int:BYTES:0
+  int:BYTES:0
+  byte[]:DigitOnes:0
+  byte[]:DigitTens:0
+  Boolean:FALSE:0
+  int:MAX_EXPONENT:0
+  double:MAX_VALUE:0
+  int:MAX_VALUE:0
+  int:MIN_EXPONENT:0
+  double:MIN_NORMAL:0
+  double:MIN_VALUE:0
+  int:MIN_VALUE:0
+  double:NEGATIVE_INFINITY:0
+  double:NaN:0
+  double:POSITIVE_INFINITY:0
+  int:SIZE:0
+  int:SIZE:0
+  Boolean:TRUE:0
+  String:_sfdcAdditionalCodeLocations:0
+  String:_sfdcSuppressedCodeLocations:0
+  char[]:digits:0
+  long:serialVersionUID:0
+  long:serialVersionUID:0
+  long:serialVersionUID:0
+  int[]:sizeTable:0
+
+11:17:25.11 (11352953)|CUMULATIVE_LIMIT_USAGE_END
+
+11:17:25.0 (13810839)|CODE_UNIT_FINISHED|EI_Replace_Primary_landlord.landlordRegistrationallstatusReplace()
+11:17:25.13 (13875877)|CUMULATIVE_PROFILING_BEGIN
+11:17:25.13 (13875877)|CUMULATIVE_PROFILING|No profiling information for SOQL operations
+11:17:25.13 (13875877)|CUMULATIVE_PROFILING|No profiling information for SOSL operations
+11:17:25.13 (13875877)|CUMULATIVE_PROFILING|No profiling information for DML operations
+11:17:25.13 (13875877)|CUMULATIVE_PROFILING|method invocations|
+External entry point: public static Map<String,String> landlordRegistrationallstatusReplace(): executed 1 time in 10 ms
+Class.EI_Replace_Primary_landlord.landlordRegistrationallstatusReplace: line 157, column 1: global Schema.DescribeFieldResult getDescribe(): executed 1 time in 6 ms
+Class.EI_Replace_Primary_landlord.landlordRegistrationallstatusReplace: line 160, column 1: global public Object put(Object, Object): executed 4 times in 1 ms
+Class.EI_Replace_Primary_landlord.landlordRegistrationallstatusReplace: line 159, column 1: global public System.Iterator iterator(): executed 6 times in 0 ms
+
+11:17:25.13 (13875877)|CUMULATIVE_PROFILING_END
+11:17:25.0 (14604895)|CODE_UNIT_FINISHED|apex://EI_Replace_Primary_landlord/ACTION$landlordRegistrationallstatusReplace
+11:17:25.0 (14622213)|EXECUTION_FINISHED
