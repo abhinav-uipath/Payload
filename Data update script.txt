@@ -1,0 +1,86 @@
+public manageUserWrapper(List<Error_Message__mdt> errorMessageList, List<England_Postcodes__mdt> ewcPostcodeList, List<String> countryPhoneCodeList,	
+                                 Map<String, String> salutationMap,Map<String, String> userRoleMap,List<String> userPermissionList) 	
+        {
+		
+		
+		
+IF( (Dispute_Record_Type__c=="Dispute EW Insured" || Dispute_Record_Type__c=="Dispute EW Custodial"
+), IF(ISPICKVAL( Decision_Type__c ,"Default"),IF(Overridden_Disputed_Amount_by_Adjudicato__c>0,Overridden_Disputed_Amount_by_Adjudicato__c,IF(Amended_amount_to_AGLL__c >0,Amended_amount_to_AGLL__c,0)),Awarded_to_Agent__c),
+Awarded_to_Agent__c)
+
+
+Need to deactive    EWI update dispute owner    process builder.	
+
+
+
+List<deposit__c > depolist = [Select Id,Saon__c,House_No__c,Street__c,City__c,County__c,Postal_Code__c,Country__c, property__r.Saon__c, property__r.Street__c,property__r.County__c,Property__r.Country__c,Property__r.House_No__c,
+Property__r.City__c,Property__r.Postal_Code__c from deposit__c where RecordType.name ='EWI Deposit' order by createddate asc limit 10];
+
+for(deposit__c Depo : depolist ){
+  IF(Depo.property__r.Saon__c !=null){
+     Depo.Saon__c = Depo.property__r.Saon__c;
+   }
+   IF(Depo.property__r.House_No__c !=null){
+     Depo.House_No__c = Depo.property__r.House_No__c;
+   }
+   IF(Depo.property__r.Street__c !=null){
+     Depo.Street__c = Depo.property__r.Street__c;
+   }
+   IF(Depo.property__r.City__c !=null){
+     Depo.City__c = Depo.property__r.City__c;
+   }
+   IF(Depo.property__r.County__c !=null){
+     Depo.County__c = Depo.property__r.County__c;
+   }
+   IF(Depo.property__r.Postal_Code__c !=null){
+     Depo.Postal_Code__c = Depo.property__r.Postal_Code__c;
+   }
+   IF(Depo.property__r.Country__c !=null){
+     Depo.Country__c = Depo.property__r.Country__c;
+   }
+
+}
+update depolist;
+
+
+
+
+List<Case > Caselist = [Select Id,Casenumber,Deposit_Account_Number__r.name, Saon__c,Deposit_Account_Number__r.Saon__c,House_No__c,Deposit_Account_Number__r.House_No__c,Street__c,Deposit_Account_Number__r.Street__c,City__c,Deposit_Account_Number__r.City__c,County__c,Deposit_Account_Number__r.County__c,Postal_Code__c,Deposit_Account_Number__r.Postal_Code__c,Country__c,Deposit_Account_Number__r.Country__c  
+ from case where RecordType.name ='Dispute EW Insured' order by createddate asc limit 200 ];
+
+for(Case Depo : Caselist ){
+  IF(Depo.Deposit_Account_Number__r.Saon__c !=null){
+     Depo.Saon__c = Depo.Deposit_Account_Number__r.Saon__c;
+   }
+   IF(Depo.Deposit_Account_Number__r.House_No__c !=null){
+     Depo.House_No__c = Depo.Deposit_Account_Number__r.House_No__c;
+   }
+   IF(Depo.Deposit_Account_Number__r.Street__c !=null){
+     Depo.Street__c = Depo.Deposit_Account_Number__r.Street__c;
+   }
+   IF(Depo.Deposit_Account_Number__r.City__c !=null){
+     Depo.City__c = Depo.Deposit_Account_Number__r.City__c;
+   }
+   IF(Depo.Deposit_Account_Number__r.County__c !=null){
+     Depo.County__c = Depo.Deposit_Account_Number__r.County__c;
+   }
+   IF(Depo.Deposit_Account_Number__r.Postal_Code__c !=null){
+     Depo.Postal_Code__c = Depo.Deposit_Account_Number__r.Postal_Code__c;
+   }
+   IF(Depo.Deposit_Account_Number__r.Country__c !=null){
+     Depo.Country__c = Depo.Deposit_Account_Number__r.Country__c;
+   }
+
+}
+system.debug('line-->28' + Caselist);
+update Caselist;	
+  
+
+
+
+
+
+
+
+
+DAN774029	
