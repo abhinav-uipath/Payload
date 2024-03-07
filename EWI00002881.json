@@ -1,0 +1,114 @@
+{
+    "Objects": {
+        "dispute": {
+            "applicant": "Tenant",
+            "dispute_id": "EWI00002881",
+            "user": {
+                "user_id": "206358",
+                "email": "geoff.nick@hotmail.com",
+                "firstname": "Geoff",
+                "surname": "Snazel"
+            }
+        },
+        "member": {
+            "member_id": "3662",
+            "g_number": "G01475",
+            "member_name": "Howards Estate Agents Ltd",
+            "email": "rachel.downes@howards.co.uk",
+            "sage_category": "1A",
+            "member_status": "Member",
+            "note": "2 July 2018 Part of Spicer Haart family. JFK\r\n5\/03\/2018 Member wants number of tenancies reduced to 850 for TDS Annual Subs. JFK\r\n\r\n11\/01\/2018 last batch uploaded to TDS Custodial awaiting confirmation to end registrations. JFK\r\n\r\n1\/11\/2017 First part moved to TDS Custodial JFK\r\n\r\n30 June 2017 Yvette phoned may be moving part (280) to TDS Custodial account JFK has advised awaiting spreadsheets and confirmation.",
+            "approved_bodies": {
+                "arla": true,
+                "arma": false,
+                "balma": false,
+                "glm": false,
+                "gorl": false,
+                "corporate": false,
+                "ha": false,
+                "law_society": false,
+                "naea": false,
+                "safeagent": false,
+                "nforl": false,
+                "nla": false,
+                "oea": false,
+                "other_body": false,
+                "rics": false,
+                "rsl": false,
+                "tls": false,
+                "tpos": false,
+                "ukala": false,
+                "none": false
+            },
+            "branch": {
+                "branch_id": "3662::13683",
+                "branch_name": "Rosie Nichols",
+                "branch_status": "Open",
+                "note": "Please use the following contact details for all communications with this branch:\r\n\r\n[repairs@howards.co.uk](mailto:repairs@howards.co.uk)\r\n\r\n01493742735\r\n\r\nupdated C Sanders 30\/07\/2020"
+            }
+        },
+        "landlord": {
+            "landlord_type": "Non Member",
+            "landlord_id": "3662::13683::188663",
+            "firstname": "Barry",
+            "surname": "Hewitt"
+        }
+    },
+    "FormData": {
+        "tenancy": {
+            "end_date": "2024-01-08",
+            "start_date": "2017-03-22",
+            "deposit_amount": "1095.00",
+            "deposit_protection_start_date": "2017-03-22",
+            "non_managed": "false",
+            "tenancy_type": "Agent",
+            "paon": "22",
+            "street": "Jenner Road",
+            "locality": "Gorleston",
+            "town": "Great Yarmouth",
+            "county": "Norfolk",
+            "country": "United Kingdom",
+            "postcode": "NR31 7RB",
+            "number_of_tenants": 2,
+            "unique_id": "OgXohgS",
+            "tenancy_id": "3662::13683::188663::528471",
+            "depository": "false"
+        },
+        "tenant": {
+            "tenant_1": {
+                "email": "geoff.nick@hotmail.com",
+                "title": "Mr.",
+                "firstname": "Geoff",
+                "surname": "Snazel",
+                "street": "11 Kestrel Green",
+                "town": "LOWESTOFT",
+                "county": "Suffolk",
+                "country": "United Kingdom",
+                "postcode": "NR33 8PG",
+                "phone": "07443649521"
+            },
+            "tenant_2": {
+                "email": "nichola.snazel@gmail.com",
+                "title": "Mrs.",
+                "firstname": "Nichola",
+                "surname": "Snazel",
+                "street": "11 Kestrel Green",
+                "town": "Lowestoft",
+                "county": "Suffolk",
+                "country": "United Kingdom",
+                "postcode": "NR33 8PG",
+                "phone": "07443649521"
+            }
+        },
+        "agent": {
+            "email": "gorleston@howards.co.uk",
+            "title": "Mr.",
+            "firstname": "Barry",
+            "surname": "Hewitt",
+            "member_name": "Howards Estate Agents Ltd",
+            "country": "United Kingdom",
+            "postcode": "NR316RB",
+            "phone": "01493665005"
+        }
+    }
+}
